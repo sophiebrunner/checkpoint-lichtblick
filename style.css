@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-col-textwhite: rgb(255, 255, 255);
+  --c-col-lightgrey: rgb(243, 243, 243);
+  --c-col-darkgrey: rgb(107, 107, 107);
+  --c-col-black: rgb(0, 0, 0);
+  --c-col-pink-box: rgb(235, 156, 173);
+  --c-col-green-box: rgb(144, 175, 165);
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.logo-container {
+  height: 5rem;
+  background-image: url(logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+  border: 1px solid hotpink;
+}
+
+.nav-bar {
+  all: unset;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 2rem;
+  border: 1px solid green;
+}
+
+h1,
+h2,
+h3 {
+  font-style: "Lato", sans-serif;
+}
+
+.hero-section {
+  background-color: var(--c-col-lightgrey);
+  border: 1px solid darkblue;
+  margin: 1rem;
+}
+
+.hero-container {
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  border: 1px solid red;
+}
+
+h1 {
+  font-size: 32px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid violet;
+}
+
+.h1-subheading {
+  border: 1px solid dodgerblue;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+}
