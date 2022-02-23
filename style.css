@@ -133,5 +133,26 @@ h1 {
   background-color: var(--c-col-green-box);
 }
 
+.page-footer {
+  margin: 1rem;
+  background-color: var(--c-col-black);
+}
+
+.page-footer ul {
+  all: unset;
+  list-style: none;
+}
+
+.footer-link {
+  all: unset;
+  color: var(--c-col-textwhite);
+  cursor: pointer;
+}
+
+address {
+  all: unset;
+  color: var(--c-col-lightgrey);
+}
+
 @media screen and (min-width: 768px) {
 }
