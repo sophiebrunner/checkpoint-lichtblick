@@ -45,7 +45,7 @@ body {
 h1,
 h2,
 h3 {
-  font-style: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .hero-section {
@@ -75,6 +75,62 @@ h1 {
   margin: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.info-box {
+  border: 1px solid orange;
+  margin: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+.info-button {
+  all: unset;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.pink-box {
+  background-color: var(--c-col-pink-box);
+}
+
+.trend-box h2,
+.trend-box > .info-text {
+  border: 1px solid darkgreen;
+  margin: 1rem;
+}
+
+.card-e-mobility {
+  border: 1px solid aqua;
+  margin: 1rem;
+}
+
+.pic-container.e-mobility {
+  background-image: url(https://images.ctfassets.net/tkvx6dicotyn/2Y9rr0ATiKRstDH1snLxFV/f9346568b366440cd96fb219686d0217/teaser_home_1-1.jpg?w=1024&fm=webp&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 16 / 9;
+}
+
+.card-podcast {
+  border: 1px solid violet;
+  margin: 1rem;
+}
+
+.pic-container.podcast {
+  background-image: url(https://images.ctfassets.net/tkvx6dicotyn/4f9HrU4xe1wAG4xQ8VDPq0/d1a1a3d678600c6790a614295a0630bd/klima-podcast_media_1_1-1.png?w=1024&fm=webp&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 16 / 9;
+  background-position: top;
+}
+
+.green-box {
+  background-color: var(--c-col-green-box);
 }
 
 @media screen and (min-width: 768px) {
