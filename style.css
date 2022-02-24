@@ -5,6 +5,8 @@
 }
 
 :root {
+  --c-margin-article: 4rem 1rem 4rem 1rem;
+  --c-margin-card: 2rem 1.5rem 2rem 1.5rem;
   --c-col-textwhite: rgb(255, 255, 255);
   --c-col-lightgrey: rgb(243, 243, 243);
   --c-col-darkgrey: rgb(107, 107, 107);
@@ -15,31 +17,42 @@
 
 html {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0 auto;
 }
 
-.logo-container {
-  height: 5rem;
-  margin: 2rem;
-  border: 1px solid hotpink;
-  background-image: url(logo.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+.logo-company {
+  display: inline-block;
+  width: 30%;
+  margin: 2rem 0 0 2rem;
 }
 
 .nav-bar {
   all: unset;
   list-style: none;
   font-size: 24px;
-  margin: 1rem 2rem 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
-  border: 1px solid green;
+  margin: 1rem 2rem 0.5rem 2rem;
+  _border: 1px solid darkgreen;
+}
+
+.hero-section {
+  margin: 1rem;
+  background-color: var(--c-col-lightgrey);
+  _border: 1px solid darkblue;
+}
+
+.img-hero {
+  background-image: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  _border: 1px solid red;
 }
 
 h1,
@@ -48,87 +61,91 @@ h3 {
   font-family: "Lato", sans-serif;
 }
 
-.hero-section {
-  margin: 1rem;
-  border: 1px solid darkblue;
-  background-color: var(--c-col-lightgrey);
-}
-
-.hero-container {
-  width: 100%;
-  background-image: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-repeat: no-repeat;
-  background-size: cover;
-  aspect-ratio: 16 / 9;
-  border: 1px solid red;
-}
-
 h1 {
-  font-size: 32px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border: 1px solid violet;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  _border: 1px solid violet;
 }
 
 .h1-subheading {
-  border: 1px solid dodgerblue;
-  margin: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 1.6rem;
+  padding: 0 2rem 2rem 2.2rem;
+  _border: 1px solid dodgerblue;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .info-box {
-  border: 1px solid orange;
-  margin: 1rem;
-  padding: 2rem 1rem 2rem 1rem;
+  _border: 1px solid orange;
+  padding: 5rem 1rem 5rem 1rem;
+  margin: var(--c-margin-article);
   text-align: center;
+}
+
+.info-text {
+  font-size: 1.5rem;
+  margin: 0 1.5rem 0 1.5rem;
 }
 
 .info-button {
   all: unset;
   display: inline-block;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 0.5rem;
-  margin-bottom: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 2rem 1rem 1rem 1rem;
   cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .pink-box {
   background-color: var(--c-col-pink-box);
 }
 
-.trend-box h2,
-.trend-box > .info-text {
-  border: 1px solid darkgreen;
-  margin: 1rem;
+.trend-header > h2 {
+  margin-top: 0;
 }
 
-.card-e-mobility {
-  border: 1px solid aqua;
-  margin: 1rem;
+.trend-header {
+  text-align: center;
+  margin: 4rem 1rem 4rem 1rem;
+  _border: 1px solid darkgreen;
 }
 
-.pic-container.e-mobility {
-  width: 100%;
-  background-image: url(https://images.ctfassets.net/tkvx6dicotyn/2Y9rr0ATiKRstDH1snLxFV/f9346568b366440cd96fb219686d0217/teaser_home_1-1.jpg?w=1024&fm=webp&q=80);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  aspect-ratio: 4 / 3;
+h3 {
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  font-size: 1.8rem;
 }
 
+.info-link {
+  all: unset;
+  display: inline-block;
+  border-bottom: 2px solid black;
+  margin: var(--c-margin-card);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-e-mobility,
 .card-podcast {
-  border: 1px solid violet;
-  margin: 1rem;
+  border: 3px solid var(--c-col-darkgrey);
+  border-radius: 10px;
+  margin: 4rem 2rem 4rem 2rem;
 }
 
-.pic-container.podcast {
+.img-card {
   width: 100%;
-  background-image: url(https://images.ctfassets.net/tkvx6dicotyn/4f9HrU4xe1wAG4xQ8VDPq0/d1a1a3d678600c6790a614295a0630bd/klima-podcast_media_1_1-1.png?w=1024&fm=webp&q=80);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
-  aspect-ratio: 4 / 3;
+  border-radius: 10px 10px 0 0;
+  transform: translate(-0.7rem, 0.7rem);
+  position: relative;
+  z-index: -1;
 }
 
 .green-box {
@@ -141,14 +158,14 @@ h1 {
   background-color: var(--c-col-black);
 }
 
-.page-footer ul {
+.footer-container {
   all: unset;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
   align-items: center;
+  gap: 2rem;
 }
 
 .footer-link {
@@ -171,4 +188,31 @@ address::before {
 }
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    position: relative;
+  }
+
+  .img-hero ~ header {
+    position: absolute;
+    top: 1%;
+    margin-right: 20rem;
+    color: var(--c-col-textwhite);
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  .h1-subheading {
+    font-size: 120%;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer-link {
+    font-size: 0.7rem;
+  }
 }
