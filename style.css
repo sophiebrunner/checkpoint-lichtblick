@@ -207,6 +207,10 @@ address::before {
     font-size: 120%;
   }
 
+  .card-container {
+    display: flex;
+  }
+
   .footer-container {
     flex-direction: row;
     gap: 1rem;
