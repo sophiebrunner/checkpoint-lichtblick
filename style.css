@@ -5,19 +5,19 @@
 }
 
 :root {
-  --c-margin-article: 4rem 1rem 4rem 1rem;
-  --c-margin-card: 2rem 1.5rem 2rem 1.5rem;
-  --c-col-textwhite: rgb(255, 255, 255);
+  --c-margin-big: 4rem 1rem 4rem 1rem;
+  --c-margin-small: 2rem 1.5rem 2rem 1.5rem;
+  --c-col-white: rgb(255, 255, 255);
   --c-col-lightgrey: rgb(243, 243, 243);
   --c-col-darkgrey: rgb(107, 107, 107);
   --c-col-black: rgb(0, 0, 0);
-  --c-col-pink-box: rgb(235, 156, 173);
-  --c-col-green-box: rgb(144, 175, 165);
+  --c-col-pink: rgb(235, 156, 173);
+  --c-col-green: rgb(144, 175, 165);
 }
 
 html {
-  font-size: 16px;
   line-height: 1.5;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,8 +28,7 @@ body {
 .page-header {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  border: 1px solid salmon;
+  overflow: hidden;
 }
 
 .logo-company {
@@ -40,24 +39,22 @@ body {
 .nav-bar {
   all: unset;
   list-style: none;
-  font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1rem 2rem 0.5rem 2rem;
   cursor: pointer;
-  border: 1px solid darkgreen;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .nav-link {
-  flex-shrink: 1;
-  border: 1px solid black;
+  flex: 1 1 1;
 }
 
 .hero-section {
   margin: 1rem;
   background-color: var(--c-col-lightgrey);
-  _border: 1px solid darkblue;
 }
 
 .img-hero-mobile {
@@ -76,13 +73,11 @@ h1 {
   margin-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  border: 1px solid violet;
 }
 
 .h1-subheading {
   font-size: 1.6rem;
   padding: 0 2rem 2rem 2.2rem;
-  border: 1px solid dodgerblue;
 }
 
 h2 {
@@ -90,9 +85,8 @@ h2 {
 }
 
 .info-box {
-  _border: 1px solid orange;
   padding: 5rem 1rem 5rem 1rem;
-  margin: var(--c-margin-article);
+  margin: var(--c-margin-big);
   text-align: center;
 }
 
@@ -114,17 +108,12 @@ h2 {
 }
 
 .pink-box {
-  background-color: var(--c-col-pink-box);
-}
-
-.trend-header > h2 {
-  margin-top: 0;
+  background-color: var(--c-col-pink);
 }
 
 .trend-header {
   text-align: center;
-  margin: 4rem 1rem 4rem 1rem;
-  _border: 1px solid darkgreen;
+  margin: var(--c-margin-big);
 }
 
 h3 {
@@ -136,7 +125,7 @@ h3 {
   all: unset;
   display: inline-block;
   border-bottom: 2px solid black;
-  margin: var(--c-margin-card);
+  margin: var(--c-margin-small);
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 600;
@@ -158,12 +147,12 @@ h3 {
 }
 
 .green-box {
-  background-color: var(--c-col-green-box);
+  background-color: var(--c-col-green);
 }
 
 .page-footer {
-  margin: 1rem;
   padding: 3rem;
+  margin: 1rem;
   background-color: var(--c-col-black);
 }
 
@@ -171,10 +160,10 @@ h3 {
   all: unset;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -182,8 +171,8 @@ h3 {
   all: unset;
   display: inline-block;
   cursor: pointer;
-  border-bottom: 2px solid var(--c-col-textwhite);
-  color: var(--c-col-textwhite);
+  border-bottom: 2px solid var(--c-col-white);
+  color: var(--c-col-white);
 }
 
 address {
@@ -202,7 +191,6 @@ address::before {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 1rem 0 1rem;
     align-items: center;
   }
 
@@ -212,13 +200,15 @@ address::before {
   }
 
   .nav-bar {
-    width: 100%;
-    _flex-wrap: wrap;
     justify-content: space-between;
-    _gap: 2em;
+    flex-wrap: wrap;
+    min-width: 20em;
     margin: 1rem 2rem 0.5rem 2rem;
     cursor: pointer;
-    border: 1px solid darkgreen;
+  }
+
+  .hero-section {
+    overflow: hidden;
   }
 
   .img-hero-mobile {
@@ -229,34 +219,34 @@ address::before {
     background-image: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
     aspect-ratio: 16 / 9;
-    _border: 1px solid red;
-  }
-
-  .img-hero-full-width {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-left: 5em;
     padding-right: 50em;
-    border: 5px solid hotpink;
   }
 
   h1 {
     font-size: 5rem;
-    color: var(--c-col-textwhite);
-    border: 2px solid hotpink;
+    color: var(--c-col-white);
   }
 
   .h1-subheading {
     font-size: 2rem;
-    color: var(--c-col-textwhite);
-    border: 2px solid dodgerblue;
+    color: var(--c-col-white);
+  }
+
+  .trend-header {
+    margin-bottom: 0;
   }
 
   .card-container {
     display: flex;
-    margin-top: 5rem;
+  }
+
+  .green-box {
+    margin-top: 0;
   }
 
   .footer-container {
