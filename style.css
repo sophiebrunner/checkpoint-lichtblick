@@ -171,6 +171,7 @@ h3 {
   all: unset;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -197,19 +198,17 @@ address::before {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-company {
-    width: 300px;
-    margin-top: 1rem;
-  }
-
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    _gap: 5em;
     margin: 0 1rem 0 1rem;
-    _padding-right: 20em;
     align-items: center;
+  }
+
+  .logo-company {
+    width: 300px;
+    margin-top: 1rem;
   }
 
   .nav-bar {
@@ -220,10 +219,6 @@ address::before {
     margin: 1rem 2rem 0.5rem 2rem;
     cursor: pointer;
     border: 1px solid darkgreen;
-  }
-
-  _.nav-bar > li + li {
-    margin-left: 2rem;
   }
 
   .img-hero-mobile {
@@ -261,16 +256,11 @@ address::before {
 
   .card-container {
     display: flex;
-    border: 1px solid black;
     margin-top: 5rem;
   }
 
   .footer-container {
     flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .footer-link {
-    font-size: 0.8rem;
+    justify-content: center;
   }
 }
