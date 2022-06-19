@@ -166,19 +166,26 @@ h3 {
   text-align: center;
 }
 
-.card--e-mobility + .card--podcast {
-  margin-top: 2rem;
-}
-
 .card--e-mobility,
 .card--podcast {
   border: 3px solid darkgrey;
   border-radius: 10px;
 }
 
+.card--e-mobility + .card--podcast {
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 786px) {
+  .card--e-mobility + .card--podcast {
+    margin-top: 0;
+  }
+}
+
 .card__img {
   padding: 0;
   width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 10px 10px 0 0;
   transform: translate(-0.7rem, 0.7rem);
   position: relative;
